@@ -4,7 +4,7 @@ Stage: repository skeleton. Accepted: Java 21, Quarkus, Maven modules, one deplo
 
 Evaluation target: replay a synthetic day with two parents, two children, a cook and a household helper. Score the resulting household state before testing how a merchant maps requested quantities to available packs. This repository contains the evaluation brief. Measured accuracy, token usage and merchant results need a reproducible run.
 
-Next discussion: [first capture spec](specs/001-kitchen-capture.md). Decide these before designing the first schema:
+Current focus is the [voice-to-record architecture](specs/002-voice-to-record.md). The first proposed demonstration is audio upload to an actual MySQL record and read-back. Paired text inputs isolate extraction errors. Decide these before designing the first schema:
 
 - When a parent requests six eggs, does it mean buy six or bring total stock to six? How should the household clarify or set a default?
 - Who can report, request, override or approve spending? How does a cook choose between multiple homes?

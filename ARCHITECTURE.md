@@ -4,6 +4,10 @@
 
 One Maven reactor builds two modules. `apps/backend` is the Quarkus application and composition root. It depends on `modules/kitchen`, a plain Java module for future kitchen behaviour. Kitchen has no dependency on Quarkus, persistence, an LLM or a messaging provider. No runtime endpoint or schema exists yet.
 
+## First feature design
+
+The [voice-to-record architecture](docs/specs/002-voice-to-record.md) traces an actual recording through interpretation, a MySQL commit, clarification and read-back. It is the proposed first implementation slice.
+
 ## Intended flow
 
 A future input adapter identifies the household, actor and source message. Text goes straight to interpretation. A future speech adapter supplies a transcript and retains its relationship to the source according to household policy. The interpreter proposes operations. Domain code resolves conflicts, validates authority and asks for missing context. Persistence commits accepted changes and their evidence together. Current state and action outcomes must be retrievable by identifier.

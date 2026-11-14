@@ -6,7 +6,7 @@ Imagine opening the door for the cook at 8 am. One partner is half asleep, yeste
 
 ## First project
 
-Turn everyday kitchen updates into attributable, correctable records in MySQL. Start with irregular typed English to isolate interpretation errors. Then accept voice notes, native scripts, transliterated words and mixed languages through the same application boundary. WhatsApp is the intended everyday channel for the cook. Before an action involving money, fetch the latest applicable state and reconcile it with the merchant cart.
+Turn everyday kitchen updates into attributable, correctable records in MySQL. Start with a voice note and carry it through to a stored record. Use typed transcripts as a control to isolate interpretation errors. Extend coverage to native scripts, transliterated words and mixed languages through the same application boundary. WhatsApp is the intended everyday channel for the cook. Before an action involving money, fetch the latest applicable state and reconcile it with the merchant cart.
 
 Today this repository contains a Maven skeleton and engineering documents. The first project is a design brief. Database models, extraction, speech, messaging and ordering are future work.
 
@@ -32,6 +32,7 @@ Compare one-pass chat, Kivi and direct app use on the same household day. Measur
 
 ## Start here
 
+- [Voice-to-record design](docs/specs/002-voice-to-record.md) follows a cook’s note through capture, correction and read-back.
 - [Architecture](ARCHITECTURE.md) describes the module boundaries.
 - [Agent guide](AGENTS.md) explains how to work in this repository.
 - [Project memory](docs/STATUS.md) records the current handoff and open decisions.

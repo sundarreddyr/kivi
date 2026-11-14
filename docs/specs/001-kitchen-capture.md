@@ -4,7 +4,7 @@ Status: exploration; implementation and data model deferred.
 
 Outcome: a person can report something once, see what the household recorded, correct it, and later trace a decision back to that report. Persist what was reported, including uncertainty. Physical stock may change without a report.
 
-First exercise typed English with source time, actor and household. Add noisy voice transcripts, native language and mixed scripts afterward. Use the same intent fixtures to isolate speech errors from interpretation errors.
+Use paired audio and typed transcripts with source time, actor and household. The [voice-to-record plan](002-voice-to-record.md) describes the first slice. Use the same intent fixtures to isolate speech errors from interpretation errors.
 
 | Synthetic input or sequence | Expected behaviour to evaluate |
 | --- | --- |
