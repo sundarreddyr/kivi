@@ -10,3 +10,9 @@ target/
 !.env.example
 local-data/
 *.log
+
+# Local-only security findings, evidence, and security session records.
+# Never force-add; ignored paths are not an access-control boundary.
+/docs/security/
+# Guard against accidentally reintroducing the former local-only path.
+/security/

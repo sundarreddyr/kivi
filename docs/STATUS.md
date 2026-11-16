@@ -1,16 +1,16 @@
-# Current handoff
+---
+created_at: "2026-11-14T11:56:05+05:30"
+created_by: "Codex"
+updated_at: "2026-11-16T14:37:42+05:30"
+updated_by: "Codex / publication-preparation session"
+---
 
-Stage: repository skeleton. Accepted: Java 21, Quarkus, Maven modules, one deployable and MySQL as the intended first operational store. Model, schema and integration choices are open. The repository contains no household data.
+# Current handover
 
-Evaluation target: replay a synthetic day with two parents, two children, a cook and a household helper. Score the resulting household state before testing how a merchant maps requested quantities to available packs. This repository contains the evaluation brief. Measured accuracy, token usage and merchant results need a reproducible run.
+Status: documentation setup; no active spec or implementation milestone. Owner will define the first spec in docs/specs/. Earlier product drafts/decisions are archived and are not active authority. Existing runtime scaffold is preserved.
 
-Current focus is the [voice-to-record architecture](specs/002-voice-to-record.md). The first proposed demonstration is audio upload to an actual MySQL record and read-back. Paired text inputs isolate extraction errors. Decide these before designing the first schema:
-
-- When a parent requests six eggs, does it mean buy six or bring total stock to six? How should the household clarify or set a default?
-- Who can report, request, override or approve spending? How does a cook choose between multiple homes?
-- Which evidence should be retained: original audio, transcript, corrected transcript, or only the accepted update? For how long and visible to whom?
-- At the cutoff, which changes reopen a draft, and what happens once the merchant has accepted the order?
-
-Future work should add measured model results and actual token counts separately from interpretation examples.
-
-Scaffold validation: module paths, Maven XML and local documentation links checked. Full build pending: JDK and Maven were unavailable in the creation environment.
+1. Scope: documentation-only public publication preparation on chore/repository-skeleton; commits/push status must be checked in Git.
+2. Instructions/templates: [workflows](agent-workflows/index.md); no active [spec](specs/index.md).
+3. Decisions and limitations: [publication preparation](governance/0004-publication-preparation.md).
+4. Required gates: exact-candidate Advisor review, <=20-path units, structural checks; remote push is blocked until authenticated Git network access is available.
+5. Next: complete authorized publication, then wait for the owner-defined first spec; no product implementation yet.
